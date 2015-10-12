@@ -1,6 +1,6 @@
 {
   "name": "terminaloj",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Access Online Judge using terminal with nodejs.",
   "main": "app.js",
   "directories": {
@@ -25,6 +25,7 @@
   },
   "homepage": "http://24oj.cf",
   "devDependencies": {
+    "bash-color": "0.0.3",
     "yargs": "^3.27.0"
   }
 }
