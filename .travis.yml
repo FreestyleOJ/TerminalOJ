@@ -8,3 +8,5 @@ before_script:
 script:
   # - grunt test-travis
   - mocha
+notification:
+  email: "sirius.caffrey@gmail.com"

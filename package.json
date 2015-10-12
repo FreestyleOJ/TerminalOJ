@@ -1,0 +1,27 @@
+{
+  "name": "terminaloj",
+  "version": "0.0.0",
+  "description": "Access Online Judge using terminal with nodejs.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreestyleOJ/TerminalOJ.git"
+  },
+  "keywords": [
+    "Online",
+    "Judge",
+    "Terminal"
+  ],
+  "author": "sirius.caffrey@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FreestyleOJ/TerminalOJ/issues"
+  },
+  "homepage": "http://24oj.cf"
+}
