@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/FreestyleOJ/TerminalOJ/issues"
   },
-  "homepage": "http://24oj.cf"
+  "homepage": "http://24oj.cf",
+  "devDependencies": {
+    "yargs": "^3.27.0"
+  }
 }
