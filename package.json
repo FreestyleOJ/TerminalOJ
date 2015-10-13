@@ -26,6 +26,8 @@
   "homepage": "http://24oj.cf",
   "devDependencies": {
     "bash-color": "0.0.3",
+    "commander": "^2.8.1",
+    "lodash": "^3.10.1",
     "yargs": "^3.27.0"
   }
 }
