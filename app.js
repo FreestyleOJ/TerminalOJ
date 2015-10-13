@@ -1,12 +1,15 @@
-#!/usr/bin/env node
+"use strict";
 // var argv = require('yargs').argv;
 var color = require('bash-color');
+var path = require('path');
+var fs = require('fs');
 var _ = require('lodash');
 var program = require('commander');
 
+var submit = require('./submit');
 
 program
-    .version('0.0.1')
+    .version('0.0.2')
     .usage('check more at https://github.com/freestyleoj/terminaloj')
 program
     .command('OnlineJudge <cmd>')
@@ -25,3 +28,8 @@ program
     });
 
 program.parse(process.argv);
+var ss = submit.getContent('app.js');
+if (ss.status == 'YES'){
+    console.log(color.green('File read successfully!'));
+    console.log(JSON.stringify(ss.content));
+}
