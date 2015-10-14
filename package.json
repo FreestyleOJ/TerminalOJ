@@ -1,6 +1,6 @@
 {
   "name": "terminaloj",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Access Online Judge using terminal with nodejs.",
   "main": "index.js",
   "directories": {
@@ -29,6 +29,7 @@
     "cheerio": "^0.19.0",
     "commander": "^2.8.1",
     "lodash": "^3.10.1",
+    "request": "^2.65.0",
     "yargs": "^3.27.0"
   }
 }
