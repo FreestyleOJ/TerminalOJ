@@ -39,9 +39,13 @@ program
 
 program.parse(process.argv);
 
-var fileContent = submit.getContent(__dirname + '/index.js');
+var fileContent = submit.getContent(__dirname + '/app.js');
 if (fileContent.status == 'YES'){
     console.log(color.green('File read successfully!'));
     //console.log(JSON.stringify(fileContent.content));
     //console.log(fileContent.content);
 }
+
+// exports.module = {
+
+// }
