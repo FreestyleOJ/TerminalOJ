@@ -1,8 +1,11 @@
 {
   "name": "terminaloj",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Access Online Judge using terminal with nodejs.",
   "main": "index.js",
+  "bin": {
+    "terminaloj": "./bin/cli.js"
+  },
   "directories": {
     "test": "test"
   },
