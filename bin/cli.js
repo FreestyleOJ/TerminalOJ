@@ -6,7 +6,7 @@ var program = require('commander');
 var submit = require('../lib/submit');
 
 program
-    .version('0.1.0')
+    .version('0.1.5')
     .usage('check more at https://github.com/freestyleoj/terminaloj');
 program
     .command('OnlineJudge <cmd>')
