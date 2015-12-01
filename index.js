@@ -5,7 +5,7 @@ var program = require('commander');
 var submit = require('./lib/submit');
 
 program
-    .version('0.0.2')
+    .version('0.1.0')
     .usage('check more at https://github.com/freestyleoj/terminaloj');
 program
     .command('OnlineJudge <cmd>')
@@ -24,7 +24,7 @@ program
     });
 program
     .command('submit <file>')
-    .alias('submit')
+    // .alias('submit')
     .description('submit a file')
     .option('-f --file <name>', 'select a file to submit')
     .action(function(cmd, options){
@@ -37,14 +37,33 @@ program
         console.log();
     });
 
+program
+    .command('list')
+    .description('list files in current working directory')
+    .option('-a, --all', 'Whether to display hidden files')
+    .action(function(options) {
+        var fs = require('fs');
+        fs.readdir(process.cwd(), function(err, files) {
+            var list = files;
+            if (!options.all) {
+                list = files.filter(function(file) {
+                    return file.indexOf('.') !== 0;
+                });
+            }
+            console.log(list.join(', '));
+        });
+    });
+
 program.parse(process.argv);
 
-var fileContent = submit.getContent(__dirname + '/app.js');
-if (fileContent.status == 'YES'){
-    console.log(color.green('File read successfully!'));
+// var fileContent = submit.getContent(__dirname + '/app.js');
+// if (fileContent.status == 'YES'){
+    // console.log(color.green('File read successfully!'));
+    // 
     //console.log(JSON.stringify(fileContent.content));
     //console.log(fileContent.content);
-}
+    //
+// }
 
 // exports.module = {
 

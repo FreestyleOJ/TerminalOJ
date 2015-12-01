@@ -1,6 +1,6 @@
 {
   "name": "terminaloj",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Access Online Judge using terminal with nodejs.",
   "main": "index.js",
   "directories": {
