@@ -1,6 +1,6 @@
 {
   "name": "terminaloj",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Access Online Judge using terminal with nodejs.",
   "main": "index.js",
   "bin": {
@@ -33,7 +33,9 @@
     "commander": "^2.8.1",
     "lodash": "^3.10.1",
     "moment": "^2.10.6",
-    "request": "^2.65.0"
+    "procstreams": "^0.3.0",
+    "request": "^2.65.0",
+    "shelljs": "^0.5.3"
   },
   "dependencies": {
     "bash-color": "0.0.3",
@@ -41,6 +43,8 @@
     "commander": "^2.8.1",
     "lodash": "^3.10.1",
     "moment": "^2.10.6",
-    "request": "^2.65.0"
+    "procstreams": "^0.3.0",
+    "request": "^2.65.0",
+    "shelljs": "^0.5.3"
   }
 }
